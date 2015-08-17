@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link href="css/jquery.bxslider.css" rel="stylesheet" />
+	</head>
+	<body data-spy="scroll" data-target="nav-icons">
+		<div class="container-fluid signo white text-center">
+			<div class="row">
+				<header class="head">
+					<div class="slideObjects">
+						<div class="avatar"></div>
+						<div class="avatar-txt-bg">Julie Almeida</div>
+						<div class="avatar-txt-sm">Instructional Designer</div>
+						<nav class="nav-icons">
+							<a href="#bio" class="inline p5">
+								<i class="bio"></i>
+								<div>BIO</div>
+							</a>
+							<a href="#portfolio" class="inline p5">
+								<i class="portfolio"></i>
+								<div>PORTFOLIO</div>
+							</a>
+							<a href="#contact" class="inline p5">							
+								<i class="contact"></i>
+								<div>CONTACT</div>
+							</a>
+							<a href="#blog" class="inline p5">
+								<i class="blog"></i>
+								<div>BLOG</div>
+							</a>
+						</nav>
+					</div>
+				</header>
+			</div>
+		</div>
+		<main>
+			<section id="bio" class="light-grey-back">
+				<div class="text-center container center pt10">
+					<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 p5">
+						<div class="constrained center">
+							<i class="bio-lg"></i>
+							<h1 class="signo darker-grey">BIO</h1>
+							<article class="text-left">
+								<p>Proficient, dedicated instructional designer specializing in eLearning, focusing on the effective use of technology to enhance adult education for both online and blended learning.</p>
+								<p>Proven track-record of skilled instructional design; bringing energy and positive attitude to instruction and engaging participants through practical techniques and innovative learning activities.</p>
+								<p>Experienced in collaborating with subject matter experts to create online, blended and corporate learning materials.</p>
+							</article>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+						<div class="divider center"></div>
+					</div>
+					<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 p5">
+						<div class="constrained center">
+							<i class="ethos-lg"></i>
+							<h1 class="signo darker-grey">EHTOS</h1>
+							<article class="text-left">
+								<p>In order to provide successful learning experiences, curriculum design needs a vibrant and progressive approach that promotes a climate of continuous innovation. As a professional Instructional Designer, my goal is to produce training that incorporates proven strategies and techniques, which drive learners to a productive attitude towards learning, while striving for the maximum success for every learner.</p>
+							</article>
+						</div>
+					</div>
+				</div>
+				<div class="text-center darker-grey container">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center">
+						<h4>MY FAVORITE TOOLS</h4>
+					</div>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center">
+						<ul class="bxslider">
+						  <li class="captivate"></li>
+						  <li class="camtasia"></li>
+						  <li class="indesign"></li>
+						  <li class="illustrator"></li>
+						  <li class="photoshop"></li>
+						  <li class="html"></li>
+						  <li class="css"></li>
+						  <li class="wordpress"></li>
+						  <li class="powerpoint"></li>
+						  <li class="word"></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section id="portfolio">Section 2</section>
+			<section id="contact">Section 3</section>
+			<section id="blog">Section 4</section>
+		</main>
+		<footer>
+		</footer>
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="js/jquery.bxslider.min.js"></script>
+		<script>
+			$(document).ready(function(){
+			  $('.bxslider').bxSlider({
+			  	  minSlides: 2,
+				  maxSlides: 6,
+				  slideWidth: 128,
+				  slideMargin: 15,
+				  controls: true
+			  });
+			});
+		</script>
+	</body>
+</html>

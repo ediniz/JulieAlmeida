@@ -1,0 +1,32 @@
+html { 
+  background: url('JulieAlmeidaComingSoon.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: table;
+  height: 100%;
+  width:100%;
+}
+body {
+	display: table-cell;
+    vertical-align: middle;
+	height: 100%;
+}
+.center {
+	text-align: center;
+	min-width: 100%;
+}
+.signo {font-family:  "signo",sans-serif;}
+.avatar {
+	background: url('JulieAlmeida.png') no-repeat;
+	margin: auto;
+	padding-bottom: 25px;
+	height: 140px;
+	width: 140px;
+}
+.white {color: #fff;}
+.bold {font-weight: bold;}
+.avatartextbig {font-size: 38px; text-transform: uppercase;}
+.avatartextsmall {font-size: 23px; text-transform: uppercase;}
+.comingsoon {font-size: 72px; text-transform: uppercase; padding-top: 100px}

@@ -1,0 +1,182 @@
+/*** Header ***/
+
+/* Animation */
+@keyframes headSlide {
+    0% {-webkit-transform: translateY(-800px);}
+    50% {-webkit-transform: translateY(40px);}
+    100% {-webkit-transform: translateY(0px);}
+}
+.slideObjects {
+	padding-top: 80px;
+	animation-name: headSlide;
+    animation-duration: 1s;
+}
+.head {
+	background: url('graphics/head.jpg') no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: ccover;
+	-o-background-size: cover;
+	background-size: cover;
+	display: table;
+	height: 500px;
+	width: 100%;
+}
+.avatar {
+	background: url('graphics/JulieAlmeida.png') no-repeat;
+	margin: auto;
+	padding-bottom: 25px;
+	height: 140px;
+	width: 140px;
+}
+.avatar-txt-bg {font-size: 43px; text-transform: uppercase;}
+.avatar-txt-sm {font-size: 24px; text-transform: uppercase;}
+
+/* Navigation */
+nav a {color: inherit;}
+nav a:hover {color:inherit; text-decoration: underline;}
+
+.nav-icons .bio {
+	background: url('graphics/icons.png') -6px 0;
+	display: inline-block;
+	width: 15px;
+	height: 33px;
+	padding-top: 33px;
+}
+
+.nav-icons .portfolio {
+	background: url('graphics/icons.png') -67px 0;
+	display: inline-block;
+	width: 28px;
+	height: 33px;
+	padding-top: 33px;
+}
+.nav-icons .contact {
+	background: url('graphics/icons.png') -147px 0;
+	display: inline-block;
+	width: 34px;
+	height: 33px;
+	padding-top: 33px;
+}
+.nav-icons .blog {
+	background: url('graphics/icons.png') -211px 0;
+	display: inline-block;
+	width: 29px;
+	height: 33px;
+	padding-top: 33px;
+}
+.inline {display: inline-block;}
+.p5 {padding: 5px;}
+
+/*** Bio Section ***/
+.bio-lg {
+	background: url('graphics/icons.png') -295px -352px;
+	display: inline-block;
+	width: 140px;
+	height: 140px;
+}
+.ethos-lg {
+	background: url('graphics/icons.png') -442px -346px;
+	display: inline-block;
+	width: 140px;
+	height: 140px;
+}
+.constrained {max-width: 350px;}
+.center {margin: auto;}
+
+@media (min-width: 1200px) {
+		.divider {
+		margin-top: 40px;
+		height: 400px;
+		width: 5px;
+		background-color: #fff;
+	}
+}
+@media (max-width: 950px) {
+		.divider {
+		margin-top: 30px;
+		margin-bottom: 30px;
+		height: 5px;
+		width: 50%;
+		background-color: #fff;
+	}
+}
+
+.pt10 {
+	padding-top: 10px;
+}
+
+/* Tools Slider */
+.wordpress {
+	background: url('graphics/icons.png') -6px -47px;
+	display: inline-block;
+	width: 128px;
+	height: 128px;
+}
+.captivate {
+	background: url('graphics/icons.png') -308px -47px;
+	display: inline-block;
+	width: 128px;
+	height: 128px;
+}
+.illustrator {
+	background: url('graphics/icons.png') -154px -198px;
+	display: inline-block;
+	width: 128px;
+	height: 128px;
+}
+.photoshop {
+	background: url('graphics/icons.png') -450px -198px;
+	display: inline-block;
+	width: 128px;
+	height: 128px;
+}
+.indesign {
+	background: url('graphics/icons.png') -308px -199px;
+	display: inline-block;
+	width: 128px;
+	height: 128px;
+}
+.camtasia {
+	background: url('graphics/icons.png') -154px -47px;
+	display: inline-block;
+	width: 128px;
+	height: 128px;
+}
+.html {
+	background: url('graphics/icons.png') -6px -198px;
+	display: inline-block;
+	width: 128px;
+	height: 128px;
+}
+.css {
+	background: url('graphics/icons.png') -461px -46px;
+	display: inline-block;
+	width: 128px;
+	height: 128px;
+}
+.powerpoint {
+	background: url('graphics/icons.png') -10px -357px;
+	display: inline-block;
+	width: 128px;
+	height: 128px;
+}
+.word {
+	background: url('graphics/icons.png') -154px -364px;
+	display: inline-block;
+	width: 128px;
+	height: 128px;
+}
+/*** Fonts ***/
+.signo {font-family: "signo",sans-serif;}
+
+/*** Colors ***/
+.white {color: #fff;}
+.green {color: #85ba95;}
+.dark-grey {color: #727373;}
+.darker-grey {color: #373a3d;}
+.light-grey {color: #e7e7e7;}
+
+.white-back {background-color: #fff;}
+.green-back {background-color: #85ba95;}
+.dark-grey-back {background-color: #727373;}
+.light-grey-back {background-color: #e7e7e7;}
