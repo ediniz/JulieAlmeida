@@ -6,10 +6,27 @@
     50% {-webkit-transform: translateY(40px);}
     100% {-webkit-transform: translateY(0px);}
 }
+
+@keyframes barrelRole {
+    0% {translatex(-800px);}
+    100% {-webkit-transform: matrix(360, 0, 50), translatex(50px);}
+
+}
+
 .slideObjects {
 	padding-top: 80px;
 	animation-name: headSlide;
     animation-duration: 1s;
+}
+.icon-animate {
+	padding-top: 80px;
+	animation-name: iconScale;
+    animation-duration: 1s;
+}
+.blog-animate {
+	padding-top: 80px;
+	animation-name: barrelRole;
+    animation-duration: 2s;
 }
 .head {
 	background: url('graphics/head.jpg') no-repeat center center; 
@@ -35,6 +52,83 @@
 nav a {color: inherit;}
 nav a:hover {color:inherit; text-decoration: underline;}
 
+.inline {display: inline-block;}
+.p5 {padding: 5px;}
+
+/*** Bio Section ***/
+
+.constrained {max-width: 350px;}
+.center {margin: auto;}
+
+@media (min-width: 1200px) {
+		.divider {
+		margin-top: 40px;
+		height: 400px;
+		width: 5px;
+		background-color: #fff;
+	}
+}
+@media (max-width: 950px) {
+		.divider {
+		margin-top: 30px;
+		margin-bottom: 30px;
+		height: 5px;
+		width: 50%;
+		background-color: #fff;
+	}
+}
+
+.pt10 {
+	padding-top: 10px;
+}
+
+/*** Portfolio ***/
+
+.portfolio-head {
+	position: relative;
+	padding: 30px 0;
+	margin-bottom:80px;
+}
+.portfolio-head:after {
+	content:"";
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+	top: 129px;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-top: 60px solid #85ba95;
+}
+.circle {
+	width: 275px;
+	height: 275px;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border: 12px solid #e7e7e7;
+	border-radius: 50%;
+	margin-bottom: 30px;
+}
+
+/*** Blog ***/
+
+.parent {
+  position: relative;
+  margin-top:120px;
+}
+.middle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+@media (max-width: 950px) {
+	.blog {margin-top: 120px;}
+	.blog-arrow {transform: rotate(90deg);}
+	.mb15 {margin-bottom: 15px;}
+}
+
+/*** Icons ***/
 .nav-icons .bio {
 	background: url('graphics/icons.png') -6px 0;
 	display: inline-block;
@@ -64,10 +158,6 @@ nav a:hover {color:inherit; text-decoration: underline;}
 	height: 33px;
 	padding-top: 33px;
 }
-.inline {display: inline-block;}
-.p5 {padding: 5px;}
-
-/*** Bio Section ***/
 .bio-lg {
 	background: url('graphics/icons.png') -295px -352px;
 	display: inline-block;
@@ -80,32 +170,6 @@ nav a:hover {color:inherit; text-decoration: underline;}
 	width: 140px;
 	height: 140px;
 }
-.constrained {max-width: 350px;}
-.center {margin: auto;}
-
-@media (min-width: 1200px) {
-		.divider {
-		margin-top: 40px;
-		height: 400px;
-		width: 5px;
-		background-color: #fff;
-	}
-}
-@media (max-width: 950px) {
-		.divider {
-		margin-top: 30px;
-		margin-bottom: 30px;
-		height: 5px;
-		width: 50%;
-		background-color: #fff;
-	}
-}
-
-.pt10 {
-	padding-top: 10px;
-}
-
-/* Tools Slider */
 .wordpress {
 	background: url('graphics/icons.png') -6px -47px;
 	display: inline-block;
@@ -166,35 +230,6 @@ nav a:hover {color:inherit; text-decoration: underline;}
 	width: 128px;
 	height: 128px;
 }
-
-/*** Portfolio ***/
-
-.portfolio-head {
-	position: relative;
-	padding: 30px 0;
-	margin-bottom:80px;
-}
-.portfolio-head:after {
-	content:"";
-	position: absolute;
-	left: 50%;
-	transform: translatex(-50%);
-	top: 129px;
-	border-left: 100px solid transparent;
-	border-right: 100px solid transparent;
-	border-top: 60px solid #85ba95;
-}
-.circle {
-	width: 275px;
-	height: 275px;
-	-moz-border-radius: 50%;
-	-webkit-border-radius: 50%;
-	border: 12px solid #e7e7e7;
-	border-radius: 50%;
-	margin-bottom: 30px;
-}
-
-/*** Contact ***/
 .contact-icon:before {
 	background: url('graphics/icons.png') -345px -553px;
 	position: relative;
@@ -208,22 +243,11 @@ nav a:hover {color:inherit; text-decoration: underline;}
 }
 
 .social-lg i {font-size:80px; padding:20px 20px 60px 20px;}
-
-/*** Blog ***/
 .double-arrow {
 	background: url('graphics/icons.png') -494px -586px;
 	display: inline-block;
 	width: 56px;
 	height: 52px;
-}
-.parent {
-  position: relative;
-  margin-top:120px;
-}
-.middle {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
 }
 .edx-lg {
 	background: url('graphics/icons.png') -6px -498px;
